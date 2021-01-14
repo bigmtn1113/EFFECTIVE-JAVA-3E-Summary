@@ -18,7 +18,7 @@ public class Elvis {
 생성자는 필드가 초기화될 때 한 번만 호출된다.  
 여기서 만들어진 인스턴스는 전체 시스템에서 하나뿐임이 보장된다.
 
-단, 권한이 있는 클라이언트는 `리플렉션 API`([ITEM 65]())인 AccessibleObject.setAccessible을 사용해 private 생성자를 호출할 수 있다.
+단, 권한이 있는 클라이언트는 `리플렉션 API`([ITEM 65]())인 AccessibleObject.setAccessible을 사용해 private 생성자를 호출할 수 있다.  
 이러한 상황을 막으려면 생성자를 수정해 두 번째 객체가 생성되려 할 때 예외를 던지게 하면 된다.
 
 ### 장점
